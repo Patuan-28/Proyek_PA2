@@ -105,6 +105,6 @@ class PenumpangController extends Controller
         $penumpang->delete();
 
         return redirect()->route('penumpangs.index')
-            ->with('success', 'Data penumpang telah dihapus.');
+            ->with('success', 'Data penumpang telah berhasil dihapus.');
     }
 }
