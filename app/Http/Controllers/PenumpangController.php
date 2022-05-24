@@ -48,7 +48,7 @@ class PenumpangController extends Controller
         Penumpang::create($request->all());
 
         return redirect()->route('penumpangs.index')
-            ->with('success', 'Data penumpang telah berhasil dibuat');
+            ->with('success', 'Data penumpang telah dibuat');
     }
 
     /**
@@ -91,7 +91,7 @@ class PenumpangController extends Controller
         $penumpang->update($request->all());
 
         return redirect()->route('penumpangs.index')
-            ->with('success', 'Data penumpang telah diubah');
+            ->with('success', 'Data penumpang telah diubah.');
     }
 
     /**
@@ -105,6 +105,6 @@ class PenumpangController extends Controller
         $penumpang->delete();
 
         return redirect()->route('penumpangs.index')
-            ->with('success', 'Data penumpang telah dihapus');
+            ->with('success', 'Data penumpang telah dihapus.');
     }
 }

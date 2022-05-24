@@ -49,7 +49,7 @@ class MobilController extends Controller
         Kendaraan::create($request->all());
 
         return redirect()->route('mobil.index')
-            ->with('success', 'Data kendaraan telah berhasil dibuat');
+            ->with('success', 'Data kendaraan telah dibuat');
     }
 
     /**
@@ -94,7 +94,7 @@ class MobilController extends Controller
         $kendaraan->update($request->all());
 
         return redirect()->route('mobil.index')
-            ->with('success', 'Data kendaraan telah berhasil diubah');
+            ->with('success', 'Data kendaraan telah diubah');
     }
 
     /**
