@@ -49,7 +49,7 @@ class MobilController extends Controller
         Kendaraan::create($request->all());
 
         return redirect()->route('mobil.index')
-            ->with('success', 'Kendaraan created successfully.');
+            ->with('success', 'Data kendaraan telah berhasil dibuat');
     }
 
     /**
@@ -94,7 +94,7 @@ class MobilController extends Controller
         $kendaraan->update($request->all());
 
         return redirect()->route('mobil.index')
-            ->with('success', 'Kendaraan updated successfully');
+            ->with('success', 'Data kendaraan telah berhasil diubah');
     }
 
     /**
@@ -109,6 +109,6 @@ class MobilController extends Controller
         $kendaraan->delete();
 
         return redirect()->route('mobil.index')
-            ->with('success', 'Project deleted successfully');
+            ->with('success', 'Data kendaraan telah dihapus');
     }
 }

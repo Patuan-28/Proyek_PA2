@@ -43,7 +43,7 @@ class PesanController extends Controller
             Penumpang::create($value);
         }
      
-        return back()->with('success', 'New subject has been added.');
+        return back()->with('success', 'Pesan telah berhasil dibuat');
     }
 
 

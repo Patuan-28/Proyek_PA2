@@ -48,7 +48,7 @@ class PetugasController extends Controller
         Penumpang::create($request->all());
 
         return redirect()->route('petugas.index')
-            ->with('success', 'Penumpang created successfully.');
+            ->with('success', 'Data penumpang telah dibuat');
     }
 
     /**
@@ -93,7 +93,7 @@ class PetugasController extends Controller
         $penumpang->update($request->all());
 
         return redirect()->route('petugas.index')
-            ->with('success', 'Penumpang updated successfully');
+            ->with('success', 'Data penumpang telah diubah');
     }
 
     /**
@@ -108,6 +108,6 @@ class PetugasController extends Controller
         $penumpang->delete();
 
         return redirect()->route('petugas.index')
-            ->with('success', 'Project deleted successfully');
+            ->with('success', 'Data penumpang telah dihapus');
     }
 }

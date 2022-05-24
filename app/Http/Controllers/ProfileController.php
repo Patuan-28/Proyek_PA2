@@ -51,7 +51,7 @@ class ProfileController extends Controller
         $profile->save();
     
         return redirect()->route('profiles.index')
-                        ->with('success','Post has been created successfully.');
+                        ->with('success','Data profile telah dibuat');
     }
 
     /**
@@ -102,7 +102,7 @@ class ProfileController extends Controller
         $profile->save();
     
         return redirect()->route('profiles.index')
-                        ->with('success','Post updated successfully');
+                        ->with('success','Data profile telah diubah');
     }
 
     /**
@@ -116,6 +116,6 @@ class ProfileController extends Controller
         $profile->delete();
     
         return redirect()->route('profiles.index')
-                        ->with('success','profile has been deleted successfully');
+                        ->with('success','Data profile telah dihapus');
     }
 }
